@@ -8,7 +8,7 @@
     outline: none;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
-    scroll-padding-top: 3.7rem;
+    scroll-padding-top: 3.8rem;
 }
 img{
     width: 100%;
@@ -85,6 +85,8 @@ nav{
 }
 .navigation a:hover{
     color: rgb(0, 191, 99);
+    background-color: rgb(246, 246, 246);
+    border-radius: 3px;
 }
 #menu-burger{
     font-size: 40px;
@@ -235,7 +237,8 @@ nav{
 .service{
     background: no-repeat center / cover url(./Images/bg.jpg);
     background-attachment: fixed;
-    min-height: 50vh;
+    min-height: 70vh;
+    object-fit: contain;
 }
 
 
@@ -248,10 +251,8 @@ footer{
     background-color: rgba(207, 207, 207, 0.881);
 }
 .footer-container{
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(210px, auto)); */
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
     gap: 1.5rem;
 }
 .footer-box{
@@ -260,12 +261,13 @@ footer{
     justify-content: center;
     padding: 16px;
 }
-
+.footer-img{
+    width: 100%;
+}
 .footer-box h3{
     font-size: 18px;
     margin-bottom: 5px;
 }
-
 
 
 @media screen and (max-width:790px) {
@@ -293,11 +295,10 @@ footer{
         display: flex;
     }
     .navigation a{
-    display: inline-block;
-    color: black;
-    font-size: 1rem;
-    padding: 10px 15px;
-    
-}
-    
+        display: inline-block;
+        color: black;
+        font-size: 1rem;
+        padding: 10px 15px;
+        width: 100%;
+    }  
 }
