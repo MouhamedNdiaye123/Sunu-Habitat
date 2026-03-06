@@ -45,10 +45,10 @@ p{
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-bottom: 25px;
 }
 .section-heading h2{
     font-size: clamp(20px, 4vw, 30px);
-    margin-bottom: 5px;
     text-transform: capitalize;
 }
 .section-heading h2 span{
@@ -144,7 +144,7 @@ nav{
     border-radius: 7px;
 }
 .maison-box:hover{
-    transform: translateY(-20px);
+    transform: translateY(-10px);
 }
 .maison-btn{
     display: flex;
@@ -234,41 +234,119 @@ nav{
 }
 
 /* SERVICES STYLES */
-.service{
+.client{
     background: no-repeat center / cover url(./Images/bg.jpg);
     background-attachment: fixed;
-    min-height: 70vh;
+    min-height: 90vh;
     object-fit: contain;
 }
 
+
+/* CONTACT STYLES */
+
+.contact-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 1.5rem;
+}
+/* .contact-img{
+    width: 100%;
+} */
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+}
+.form-groupe{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.form-groupe div{
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+}
+form input, textarea{
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(21, 21, 21);
+}
+form input:focus, textarea:focus{
+    border: 1px solid rgb(0, 191, 99);
+}
+form textarea{
+    min-height: 150px;
+    resize: none;
+}
+form label{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+button{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(0, 191, 99);
+    border-radius: 5px;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+button:hover{
+    background-color: transparent;
+    border: 2px solid rgb(0, 191, 99);
+    color: rgb(0, 191, 99);
+}
 
 
 
 
 
 /* FOOTER STYLES */
+
 footer{
     background-color: rgba(207, 207, 207, 0.881);
 }
 .footer-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     gap: 1.5rem;
 }
 .footer-box{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     padding: 16px;
 }
 .footer-img{
-    width: 100%;
+    /* width: 100%; */
+}
+.footer-img img{
+    width: 150px;
 }
 .footer-box h3{
     font-size: 18px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
-
+.footer-box i{
+    font-size: 20px;
+    margin-right: 10px;
+    color: rgb(0, 191, 99);
+}
+.footer-box div{
+    display: flex;
+    margin-bottom: 10px;
+}
+.footer-box a{
+    color: black;
+    margin-bottom: 10px;
+    font-style: 15px;
+}
+.footer-box a:hover{
+    color: rgb(0, 191, 99);
+}
 
 @media screen and (max-width:790px) {
     section, footer{
