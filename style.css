@@ -292,12 +292,16 @@ form{
     width: 49%;
 }
 form input, textarea{
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: 12px;
+    margin-bottom: 15px;
     border: 1px solid rgb(21, 21, 21);
 }
 form input:focus, textarea:focus{
     border: 1px solid rgb(0, 191, 99);
+}
+form input::placeholder, textarea::placeholder{
+    font-size: 12px;
+    color: rgb(174, 173, 173);
 }
 form textarea{
     min-height: 150px;
@@ -309,19 +313,53 @@ form label{
 }
 button{
     display: inline-block;
-    padding: 10px 20px;
-    font-size: 15px;
+    padding: 12px 20px;
+    font-size: 14px;
     color: white;
     background-color: rgb(0, 191, 99);
-    border-radius: 5px;
+    border-radius: 30px;
     transition: .5s ease-in-out;
     cursor: pointer;
 }
 button:hover{
     background-color: transparent;
-    border: 2px solid rgb(0, 191, 99);
+    border: 1px solid rgb(0, 191, 99);
     color: rgb(0, 191, 99);
 }
+
+
+/* CONNEXION STYLES */
+.connexion form{
+    display: flex;
+    justify-content: center;
+    max-width: 450px;
+    margin: 0 auto; 
+}
+.connexion form p{
+    text-align: center;
+    font-size: 14px;
+}
+.connexion form p a{
+    color: rgb(0, 191, 99);
+}
+.connexion form p a:hover{
+    color: rgb(13, 141, 79);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
