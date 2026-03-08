@@ -291,12 +291,12 @@ form{
     flex-direction: column;
     width: 49%;
 }
-form input, textarea{
+form input, textarea, select{
     padding: 12px;
     margin-bottom: 15px;
     border: 1px solid rgb(21, 21, 21);
 }
-form input:focus, textarea:focus{
+form input:focus, textarea:focus ,select:focus{
     border: 1px solid rgb(0, 191, 99);
 }
 form input::placeholder, textarea::placeholder{
@@ -329,6 +329,9 @@ button:hover{
 
 
 /* CONNEXION STYLES */
+.connexion-section{
+    margin-top: 25px;
+}
 .connexion form{
     display: flex;
     justify-content: center;
@@ -346,6 +349,10 @@ button:hover{
     color: rgb(13, 141, 79);
 }
 
+.nav-connecte{
+    display: flex;
+    justify-content: center;
+}
 
 
 
