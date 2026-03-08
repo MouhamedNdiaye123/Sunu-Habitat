@@ -233,12 +233,35 @@ nav{
     font-size: 14px;
 }
 
-/* SERVICES STYLES */
+/* CLIENTS STYLES */
 .client{
     background: no-repeat center / cover url(./Images/bg.jpg);
     background-attachment: fixed;
     min-height: 90vh;
     object-fit: contain;
+}
+.client-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 1.5rem;
+}
+.client-box{
+    text-align: center;
+    padding: 15px;
+    border-radius: 7px;
+    background-color: rgba(242, 242, 242, 0.619);
+    transition: .3s ease-in-out;
+}
+.client-box:hover{
+    box-shadow: 0 0 5px rgb(0, 191, 99);
+    transform: translateY(11px);
+
+}
+.client-box img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 
@@ -246,12 +269,12 @@ nav{
 
 .contact-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
     gap: 1.5rem;
 }
-/* .contact-img{
+.contact-img img{
     width: 100%;
-} */
+}
 form{
     display: flex;
     flex-direction: column;
@@ -320,9 +343,7 @@ footer{
     flex-direction: column;
     padding: 16px;
 }
-.footer-img{
-    /* width: 100%; */
-}
+
 .footer-img img{
     width: 150px;
 }
@@ -348,6 +369,18 @@ footer{
     color: rgb(0, 191, 99);
 }
 
+
+
+
+
+@media screen and (max-width:900px){
+    section, footer{
+        padding: 30px 5%;
+    }
+    nav{
+        padding: 0px 5%;
+    }
+}
 @media screen and (max-width:790px) {
     section, footer{
         padding: 30px 3%;
