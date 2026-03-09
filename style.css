@@ -11,7 +11,7 @@
     scroll-padding-top: 3.8rem;
 }
 img{
-    width: 100%;
+    width:100%;
 }
 section, footer{
     padding: 3.5rem 10%;
@@ -101,7 +101,6 @@ nav{
     justify-content: center;
     /* align-items: center; */
     background: linear-gradient(rgba(0, 0, 0, 0.502), rgba(0, 0, 0, 0.429)), no-repeat center / cover url(./Images/home-bg.jpg);
-    background-attachment: fixed;
     object-fit: contain;
     min-height: 100vh;
     color: rgb(255, 255, 255);
@@ -236,7 +235,6 @@ nav{
 /* CLIENTS STYLES */
 .client{
     background: no-repeat center / cover url(./Images/bg.jpg);
-    background-attachment: fixed;
     min-height: 90vh;
     object-fit: contain;
 }
