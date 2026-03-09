@@ -175,7 +175,7 @@ nav{
 
 .about-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
     gap: 15px;
     align-items: center;
     margin-top: 30px;
@@ -454,6 +454,18 @@ footer{
         font-size: 1rem;
         padding: 10px 15px;
         width: 100%;
+    }
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .contact-container{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
     }
     .form-groupe{
         display: flex;
