@@ -1,0 +1,283 @@
+/* DETAIL MAISON PRO STYLES - DO NOT AFFECT OTHER PAGES */
+.pro-detail-section {
+    padding: 2rem 10%;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Breadcrumb */
+.pro-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    margin-bottom: 25px;
+    color: #555;
+}
+.pro-breadcrumb a {
+    color: #00bf63;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.pro-breadcrumb a:hover {
+    text-decoration: underline;
+}
+.pro-breadcrumb i {
+    font-size: 18px;
+    color: #999;
+}
+.pro-breadcrumb span {
+    font-weight: 600;
+    color: #222;
+}
+
+/* Gallery */
+.pro-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+.pro-gallery-main img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.pro-gallery-thumbs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+.pro-gallery-thumbs img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.pro-gallery-thumbs img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,191,99,0.3);
+}
+
+/* Main Content Wrapper */
+.pro-content-wrapper {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+.pro-main-info {
+    flex: 1;
+}
+
+/* Header Info */
+.pro-badge {
+    display: inline-block;
+    background-color: #00bf63;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.pro-header h1 {
+    font-size: clamp(24px, 4vw, 32px);
+    margin-bottom: 10px;
+    color: #111;
+}
+.pro-location {
+    font-size: 16px;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 30px;
+}
+.pro-location i {
+    color: #00bf63;
+    font-size: 20px;
+}
+
+/* Features icons */
+.pro-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    border: 1px solid #eaeaea;
+}
+.pro-feature-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    min-width: 150px;
+}
+.pro-feature-item i {
+    font-size: 30px;
+    color: #00bf63;
+    background: rgba(0, 191, 99, 0.1);
+    padding: 10px;
+    border-radius: 50%;
+}
+.pro-feature-item span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Description & Amenities */
+.pro-description h3, .pro-amenities h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #00bf63;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+.pro-description p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 15px;
+}
+.pro-amenities {
+    margin-top: 40px;
+}
+.pro-amenities ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 15px;
+}
+.pro-amenities li {
+    font-size: 16px;
+    color: #444;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.pro-amenities i {
+    color: #00bf63;
+    font-size: 20px;
+}
+
+/* Sidebar Contact Card */
+.pro-sidebar {
+    width: 380px;
+    position: sticky;
+    top: 100px;
+}
+.pro-price-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    border: 1px solid #eee;
+}
+.pro-price-card h2 {
+    font-size: 34px;
+    color: #00bf63;
+    margin-bottom: 20px;
+}
+.pro-price-card h2 span {
+    font-size: 16px;
+    color: #777;
+    font-weight: normal;
+}
+.pro-price-card hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin-bottom: 20px;
+}
+.pro-agent-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+.pro-agent-info img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.pro-agent-info h4 {
+    font-size: 18px;
+    margin-bottom: 3px;
+    color: #222;
+}
+.pro-agent-info span {
+    font-size: 13px;
+    color: #888;
+}
+
+/* Buttons in card */
+.pro-btn-contact, .pro-btn-outline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+    text-align: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.pro-btn-contact {
+    background: #25D366;
+    color: white;
+}
+.pro-btn-contact:hover {
+    background: #128C7E;
+    transform: translateY(-2px);
+}
+.pro-btn-contact i {
+    font-size: 22px;
+}
+
+.pro-btn-outline {
+    background: transparent;
+    border: 2px solid #00bf63;
+    color: #00bf63;
+}
+.pro-btn-outline:hover {
+    background: #00bf63;
+    color: white;
+}
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+    .pro-content-wrapper {
+        flex-direction: column;
+    }
+    .pro-sidebar {
+        width: 100%;
+        position: relative;
+        top: 0;
+        margin-top: 30px;
+    }
+    .pro-gallery-main img {
+        height: 350px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .pro-gallery-thumbs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .pro-amenities ul {
+        grid-template-columns: 1fr;
+    }
+}

@@ -170,6 +170,34 @@ nav{
     color: rgb(139, 138, 138);
 }
 
+/* detail styles */
+.detail-maison-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    gap: 15px;
+    margin-top: 30px;
+}
+.detail-maison-img{
+    width: 100%;
+}
+.detail-maison-content{
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 0 0 5px rgb(0, 191, 99);
+}
+.detail-maison-content h3{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
 /* ABOUT STYLE */
 
 

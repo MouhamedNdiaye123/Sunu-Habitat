@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SUNU HABITAT</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="detail.css" />
+    <link rel="shortcut icon" href="./Images/S.png" type="image/x-icon" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- NAVBAR SECTION -->
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="./Images/S.png" alt="images logo" loading="lazy" />
+      </a>
+      <ul class="navigation" id="navigation">
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#maison">Nos maisons</a></li>
+        <li><a href="#about">A propos</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="./connexion.html">Connexion</a></li>
+      </ul>
+      <i class="bx bx-menu-alt-right" id="menu-burger"></i>
+    </nav>
+
+    <!-- DETAIL MAISON SECTION (Premium) -->
+    <section class="pro-detail-section" id="detail">
+      
+      <!-- BREADCRUMB -->
+      <div class="pro-breadcrumb">
+        <a href="index.html">Accueil</a> <i class='bx bx-chevron-right'></i>
+        <a href="index.html#maison">Nos maisons</a> <i class='bx bx-chevron-right'></i>
+        <span>Magnifique Villa Contemporaine</span>
+      </div>
+
+      <!-- IMAGE GALLERY -->
+      <div class="pro-gallery">
+        <div class="pro-gallery-main">
+          <img src="./Images/img-1.jpg" alt="Maison Principale" />
+        </div>
+        <div class="pro-gallery-thumbs">
+          <img src="./Images/img-2.jpg" alt="Miniature 1" />
+          <img src="./Images/img-3.jpg" alt="Miniature 2" />
+          <img src="./Images/img-4.jpg" alt="Miniature 3" />
+        </div>
+      </div>
+
+      <!-- MAIN CONTENT AREA -->
+      <div class="pro-content-wrapper">
+        
+        <!-- LEFT COLUMN (Details) -->
+        <div class="pro-main-info">
+          <div class="pro-header">
+            <span class="pro-badge">A Louer</span>
+            <h1>Magnifique Villa Contemporaine</h1>
+            <p class="pro-location"><i class='bx bx-map'></i> Hann Maristes 1, Dakar, Sénégal</p>
+          </div>
+
+          <div class="pro-features">
+            <div class="pro-feature-item">
+              <i class='bx bx-bed'></i>
+              <span>4 Chambres</span>
+            </div>
+            <div class="pro-feature-item">
+              <i class='bx bx-bath'></i>
+              <span>3 Salles de bain</span>
+            </div>
+            <div class="pro-feature-item">
+              <i class='bx bx-area'></i>
+              <span>250 m²</span>
+            </div>
+            <div class="pro-feature-item">
+              <i class='bx bx-car'></i>
+              <span>1 Garage</span>
+            </div>
+          </div>
+
+          <div class="pro-description">
+            <h3>Description du bien</h3>
+            <p>Découvrez cette magnifique villa moderne située dans le quartier paisible et sécurisé de Hann Maristes. Récemment rénovée, elle offre de grands espaces lumineux avec de grandes baies vitrées donnant sur un jardin verdoyant et une terrasse aménagée idéale pour les réceptions.</p>
+            <p>Idéalement située, proche des commerces, des écoles internationales et des grands axes routiers, cette villa est parfaite pour une famille en quête de confort absolu, de sécurité et de tranquillité. Prête à habiter immédiatement avec des finitions premium.</p>
+          </div>
+          
+          <div class="pro-amenities">
+            <h3>Équipements inclus</h3>
+            <ul>
+              <li><i class='bx bx-check-circle'></i> Cuisine américaine équipée</li>
+              <li><i class='bx bx-check-circle'></i> Climatisation split</li>
+              <li><i class='bx bx-check-circle'></i> Service de Gardiennage 24/7</li>
+              <li><i class='bx bx-check-circle'></i> Piscine privée chauffée</li>
+              <li><i class='bx bx-check-circle'></i> Groupe électrogène de secours</li>
+              <li><i class='bx bx-check-circle'></i> Connexion Fibre Optique très haut débit</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN (Sidebar / Contact) -->
+        <div class="pro-sidebar">
+          <div class="pro-price-card">
+            <h2>300.000 <span>CFA / mois</span></h2>
+            <hr>
+            <div class="pro-agent-info">
+              <img src="./Images/client-2.jpg" alt="Agent">
+              <div>
+                <h4>Awa Kontey</h4>
+                <span>Agent Immobilier Sunu Habitat</span>
+              </div>
+            </div>
+            <a href="https://wa.me/221785352208?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20la%20Villa%20Contemporaine%20à%20Hann%20Maristes%20sur%20Sunu%20Habitat." target="_blank" class="pro-btn-contact"><i class='bx bxl-whatsapp' ></i> Contacter sur WhatsApp</a>
+            <a href="javascript:void(0)" onclick="Swal.fire('Demande de visite', 'Nous vous contacterons très vite pour organiser une visite des lieux.', 'info')" class="pro-btn-outline"><i class='bx bx-envelope' ></i> Demander une visite</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-box">
+          <a href="index.html" class="footer-img">
+            <img src="./Images/S.png" alt="images logo" />
+          </a>
+        </div>
+        <div class="footer-box"></div>
+        <div class="footer-box">
+          <h3>Contact</h3>
+          <div>
+            <i class="bx bx-map"></i>
+            <a href="#" class="link">Dakar</a>
+          </div>
+          <div>
+            <i class="bx bx-phone"></i>
+            <a href="#">+221 77 5XX XX XX</a>
+          </div>
+          <div>
+            <i class="bx bx-envelope"></i>
+            <a href="#">contact@sunuhabitat.sn</a>
+          </div>
+        </div>
+        <div class="footer-box">
+          <h3>Liens Rapides</h3>
+          <a href="index.html">Accueil</a>
+          <a href="#maison">Nos maisons</a>
+          <a href="#about">A Propos</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-box">
+          <h3>A propos</h3>
+          <a href="#" class="link">support</a>
+          <a href="#" class="link">support</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Firebase UI (Si besoin) et Swal -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

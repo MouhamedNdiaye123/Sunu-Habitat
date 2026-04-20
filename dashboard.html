@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUNU HABITAT - Dashboard Propriétaire</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="shortcut icon" href="./Images/S.png" type="image/x-icon" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="dashboard-layout">
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <img src="./Images/S.png" alt="Logo">
+                <h2>Espace Pro</h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="dashboard.html" class="active"><i class='bx bx-grid-alt'></i> Vue d'ensemble</a></li>
+                <li><a href="#"><i class='bx bx-building-house'></i> Mes Maisons</a></li>
+                <li><a href="ajouter-maison.html"><i class='bx bx-plus-circle'></i> Ajouter une annonce</a></li>
+                <li><a href="#"><i class='bx bx-message-square-detail'></i> Demandes clients</a></li>
+                <li><a href="index.html"><i class='bx bx-world'></i> Retour au site</a></li>
+            </ul>
+            <div class="sidebar-bottom">
+                <a href="#" id="btn-logout"><i class='bx bx-log-out'></i> Déconnexion</a>
+            </div>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+            <header class="topbar">
+                <div class="title" style="display:flex; align-items:center; gap:15px;">
+                    <i class='bx bx-menu' id="dashboard-burger" style="font-size: 32px; cursor:pointer; display:none; color: #00bf63;"></i>
+                    <div>
+                        <h1>Tableau de bord</h1>
+                        <p>Bienvenue sur votre espace de gestion immobilière</p>
+                    </div>
+                </div>
+                <div class="user-profile">
+                    <img src="./Images/client-1.jpg" alt="Profile">
+                    <span id="user-name">Chargement...</span>
+                </div>
+            </header>
+
+            <section class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon"><i class='bx bx-home-smile'></i></div>
+                    <div class="stat-info">
+                        <h3>5</h3>
+                        <p>Annonces Actives</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: rgba(23, 162, 184, 0.1); color: #17a2b8;"><i class='bx bx-show'></i></div>
+                    <div class="stat-info">
+                        <h3>1,245</h3>
+                        <p>Vues Totales</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: rgba(255, 193, 7, 0.1); color: #ffc107;"><i class='bx bx-message-square-dots'></i></div>
+                    <div class="stat-info">
+                        <h3>12</h3>
+                        <p>Nouveaux Messages</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: rgba(220, 53, 69, 0.1); color: #dc3545;"><i class='bx bx-heart'></i></div>
+                    <div class="stat-info">
+                        <h3>34</h3>
+                        <p>Mises en favoris</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="recent-listings">
+                <h2>Vos récentes annonces</h2>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Photo</th>
+                                <th>Titre</th>
+                                <th>Localisation</th>
+                                <th>Loyer / Prix</th>
+                                <th>Statut</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="dashboard-table-body">
+                            <!-- Les annonces statiques d'origine -->
+                            <tr>
+                                <td><img src="./Images/img-1.jpg" alt="House" class="table-img"></td>
+                                <td>Villa Contemporaine</td>
+                                <td>Hann Maristes 1</td>
+                                <td>300.000 CFA</td>
+                                <td><span class="status active">En ligne</span></td>
+                                <td><a href="#" class="action-btn"><i class='bx bx-edit-alt'></i></a></td>
+                            </tr>
+                            <tr>
+                                <td><img src="./Images/img-2.jpg" alt="House" class="table-img"></td>
+                                <td>Appartement F4</td>
+                                <td>Almadies</td>
+                                <td>500.000 CFA</td>
+                                <td><span class="status pending">En vérification</span></td>
+                                <td><a href="#" class="action-btn"><i class='bx bx-edit-alt'></i></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="firebase-config.js"></script>
+    <script type="module" src="dashboard.js"></script>
+</body>
+</html>
